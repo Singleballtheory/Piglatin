@@ -1,4 +1,4 @@
-Describe: pigLatin()
+Describe: pigLatin();
 Test: "It will recognize when the first letter is a vowel."
 Code: pigLatin("a");
 Expected Output: "true"
