@@ -5,13 +5,15 @@ function pigLatin(text) {
   const vowels = ["a", "e", "i", "o", "u"]
   let vowelDetector = false
   let pigText = text.toLowerCase().split(" ");
-    for (let i = 0; i < vowels.length; i++) {
 
-      if (pigText.includes(vowels[i])) {
+    for (let i = 0; i < pigText.length; i++) {
+      vowels.forEach(function(vowel) {
+      if (pigText[i][0] === vowel) {
         vowelDetector = true;
         console.log("hello")
       }
-    }
+    });
+  }
     return vowelDetector;
   };
 
